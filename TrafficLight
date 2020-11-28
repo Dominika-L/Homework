@@ -1,26 +1,24 @@
 package lesson4;
 
-import jdk.swing.interop.LightweightContentWrapper;
-
 import java.util.Scanner;
 
 public class TrafficLight {
-
     public static void main(String[] args) {
-
         System.out.println("What the light?");
         Scanner scanner = new Scanner(System.in);
-        String light = scanner.nextLine();
+        String answer = scanner.nextLine();
 
-        if (light == "Green") {
-            System.out.println("You can go!");
+        if (answer.equalsIgnoreCase("Green")){
+            System.out.println("Go!");
         }
-        else if (light == "Yellow + Red" ) {
-            System.out.println("Prepare to go");
+
+        else if (answer.equalsIgnoreCase("Yellow + Red")){
+            System.out.println("Get ready to go");
         }
 
         else {
             System.out.println("Stop");
         }
-        }
+
     }
+}
