@@ -1,0 +1,20 @@
+package lesson4;
+
+import java.util.Scanner;
+
+public class Weather {
+    public static void main(String[] args) {
+        System.out.println("Is it raining now?");
+        Scanner scanner = new Scanner(System.in);
+        String answer = scanner.nextLine();
+
+
+        if (answer.equalsIgnoreCase("Yes")){
+            System.out.println("Do not forget your umbrella!");
+        }
+
+        else {
+            System.out.println("Leave umbrella at home");
+        }
+    }
+}
