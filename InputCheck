@@ -6,7 +6,7 @@ public class InputCheckNew {
 
     public static void main(String[] args) {
 
-        String answer = new String("exit");
+        String answer;
 
         do {
             System.out.println("Please, input text");
