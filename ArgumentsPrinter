@@ -1,0 +1,11 @@
+package lesson4;
+
+public class ArgumentsPrinter {
+    public static void main(String[] args) {
+
+        String[] words = {"AA","BB","CC","DD"};
+        for (String word : words) {
+            System.out.println(word);
+        }
+    }
+}
