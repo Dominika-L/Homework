@@ -2,17 +2,14 @@ package lesson4;
 
 import java.util.Scanner;
 
-public class InputCheckNew {
-
+public class InputCheck {
     public static void main(String[] args) {
 
-        String answer;
-
+        String text;
         do {
             System.out.println("Please, input text");
             Scanner scanner = new Scanner(System.in);
-            answer = scanner.nextLine();
-        } while (answer.equalsIgnoreCase("exit"));
+            text = scanner.nextLine();
+        } while (!text.equalsIgnoreCase("exit"));
     }
-
 }
