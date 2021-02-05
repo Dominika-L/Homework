@@ -1,0 +1,58 @@
+public class Cat {
+
+        static String name;
+        static boolean isHungry;
+        static String play;
+        static String eat;
+        static int sleep;
+
+    public static String getName() {
+        return name;
+    }
+
+    public static void setName(String name) {
+        Cat.name = name;
+    }
+
+    public static boolean isIsHungry() {
+        return isHungry;
+    }
+
+    public static void setIsHungry(boolean isHungry) {
+        Cat.isHungry = isHungry;
+    }
+
+    public static String getPlay() {
+        return play;
+    }
+
+    public static void setPlay(String play) {
+        Cat.play = play;
+    }
+
+    public static String getEat() {
+        return eat;
+    }
+
+    public static void setEat(String eat) {
+        Cat.eat = eat;
+    }
+
+    public static int getSleep() {
+        return sleep;
+    }
+
+    public static void setSleep(int sleep) {
+        Cat.sleep = sleep;
+    }
+
+    public Cat(String name, boolean isHungry, String play, String eat, int sleep) {
+        this.name = name;
+        this.isHungry = isHungry;
+        this.play = play;
+        this.eat = eat;
+        this.sleep = sleep;
+
+
+    }
+}
