@@ -1,0 +1,33 @@
+public class CatTester {
+
+    Cat tom = new Cat("Tom", true, "ball", "mouse,", 5 );
+
+    public static void main(String[] args) {
+
+        if (Cat.isHungry == true) {
+            System.out.println(Cat.getName() + "is hungry");
+        } else {
+            System.out.println(Cat.getName() + "is not hungry");
+        }
+
+        if (Cat.eat.isEmpty()) {
+            System.out.println(Cat.getName() + "should eat something");
+        } else {
+            System.out.println(Cat.getName() + "eat" + Cat.getEat());
+        }
+
+        if (Cat.sleep > 0){
+            System.out.println(Cat.getName() + "is hungry");
+            System.out.println(Cat.getName() + "has sleeping for" + Cat.getSleep() + "hours");
+        } else {
+            System.out.println(Cat.getName() + "is sleepy");
+        }
+
+        if (Cat.play.isEmpty()){
+            System.out.println(" ");
+        }else {
+            System.out.println(Cat.getName() + "plays with" + Cat.getPlay());
+        }
+
+    }
+}
