@@ -6,6 +6,7 @@ public class Scooter extends Transport {
 
         Transport scooter = new Transport();
 
-        scooter.ownProperty();
+        scooter.information();
     }
 }
+
