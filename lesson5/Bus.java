@@ -5,7 +5,6 @@ public class Bus extends PublicTransport {
 
         PublicTransport bus = new PublicTransport();
 
-        bus.buyTicket();
-
+        bus.information();
     }
 }
