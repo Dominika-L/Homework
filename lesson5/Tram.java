@@ -5,6 +5,6 @@ public class Tram extends PublicTransport {
 
         PublicTransport tram = new PublicTransport();
 
-        tram.buyTicket();
+        tram.information();
     }
 }
