@@ -1,10 +1,10 @@
 package homeworks.lesson5;
 
-public class PublicTransport {
+public class PublicTransport extends Transport{
 
-    void buyTicket (){
+    void information(){
+        super.information();
         System.out.println("You have to buy a ticket");
     }
-
 
 }
