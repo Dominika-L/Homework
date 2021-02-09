@@ -1,11 +1,18 @@
-package lesson4;
+package homeworks.lesson3;
+import java.util.Scanner;
 
 public class ArgumentsPrinter {
-    public static void main(String[] args) {
 
-        String[] words = {"AA","BB","CC","DD"};
-        for (String word : words) {
-            System.out.println(word);
+        public static void main(String[] args) {
+
+            Scanner s = new Scanner(System.in);
+            System.out.println("Input text:");
+            String text = s.nextLine();
+
+            for (Scanner it = s; it.hasNext(); ) {
+                String a = it.next();
+                System.out.println(s);
+            }
         }
     }
-}
+
