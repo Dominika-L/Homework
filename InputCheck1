@@ -1,0 +1,18 @@
+package homeworks.lesson3;
+
+import java.util.Scanner;
+
+public class InputCheck {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        while(true){
+            System.out.println("Please, input text");
+            String input = scanner.nextLine();
+            if (input.equalsIgnoreCase("exit"));{
+                break;
+            }
+        }
+    }
+}
