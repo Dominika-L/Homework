@@ -1,42 +1,21 @@
-package lesson4;
+package homeworks.lesson12;
 
 import java.util.Scanner;
 
 public class Triangle {
+
     public static void main(String[] args) {
-        System.out.println("Please give first lenght");
-        Scanner scanner = new Scanner(System.in);
-        int number = scanner.nextInt();
+        Scanner in = new Scanner(System.in);
+        System.out.print("Input side1: ");
+        int s1 = in .nextInt();
+        System.out.print("Input side2: ");
+        int s2 = in .nextInt();
+        System.out.print("Input side3: ");
+        int s3 = in .nextInt();
 
-        System.out.println("Please give second lenght");
-        Scanner scanner1 = new Scanner(System.in);
-        int number2 = scanner.nextInt();
-
-        System.out.println("Please give third lenght");
-        Scanner scanner2 = new Scanner(System.in);
-        int number3 = scanner.nextInt();
-
-        int a = number;
-        int b = number2;
-        int c = number3;
-
-        if (a + b > c) {
-            System.out.println("You can build triangle");
-        }
-
-        if (a + c > b){
-            System.out.println("You can build triangle");
-        }
-        
-        if (c + b > a){
-            System.out.println("You can build triangle");
-        }
-        
-        else {
-            System.out.println("You cannot build triangle");
-        }
-
-
-
+        System.out.print("Can you build a triangle? " + isValidTriangle(s1, s2, s3));
+    }
+    public static boolean isValidTriangle(int a, int b, int c) {
+        return (a + b > c && b + c > a && c + a > b);
     }
 }
